@@ -4,8 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/91930/AndroidStudioProjects/CPer/app/src/main/res/drawable/top_bar_gradient.xml" value="0.26614583333333336" />
-        <entry key="..\:/Users/91930/AndroidStudioProjects/CPer/app/src/main/res/layout/activity_main.xml" value="0.4490177736202058" />
-        <entry key="..\:/Users/91930/AndroidStudioProjects/CPer/app/src/main/res/layout/single_view_recycler.xml" value="0.536" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/CPer/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/CPer/app/src/main/res/layout/activity_main_java.xml" value="0.25" />
+        <entry key="..\:/Users/91930/AndroidStudioProjects/CPer/app/src/main/res/layout/single_view_recycler.xml" value="0.30412371134020616" />
       </map>
     </option>
   </component>
@@ -18,7 +19,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.264" />
+        <option name="scale" value="0.4" />
       </ProjectState>
     </option>
   </component>
