@@ -25,13 +25,18 @@ public class MainActivity_JAVA extends AppCompatActivity {
         setContentView(R.layout.activity_main_java);
         recyclerView=findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        volleyCall();
 
+    }
+
+    public void volleyCall(){
         StringRequest stringRequest=new StringRequest(url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 GsonBuilder gsonBuilder = new GsonBuilder();
                 Gson gson = gsonBuilder.create();
                 RecyclerViewDatum []data=gson.fromJson(response,RecyclerViewDatum[].class);
+                recyclerView.setAdapter(new MyAdapterJava(data,getApplicationContext()));
                 Log.d("response : ",response);
             }
         }, new Response.ErrorListener() {
