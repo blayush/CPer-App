@@ -43,7 +43,6 @@
                 android:layout_gravity="center|top"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bentham"
-                android:text="@string/running"
                 android:textColor="#514343"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -91,13 +90,13 @@
                     android:fontFamily="@font/gfs_didot"
                     android:text="@string/start_time"
                     android:textColor="#F8E4E4"
-                    android:textSize="13sp" />
+                    android:textSize="12.55sp" />
 
                 <TextView
                     android:id="@+id/start_time_text_view"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
+                    android:layout_marginStart="9dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/gfs_didot"
                     android:textColor="#F8E4E4"
@@ -128,7 +127,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/gfs_didot"
                     android:textColor="#F8E4E4"
-                    android:textSize="12.61sp" />
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -161,7 +160,7 @@
         </LinearLayout>
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/days_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"

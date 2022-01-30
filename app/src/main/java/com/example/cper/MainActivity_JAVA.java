@@ -37,7 +37,6 @@ public class MainActivity_JAVA extends AppCompatActivity {
                 Gson gson = gsonBuilder.create();
                 RecyclerViewDatum []data=gson.fromJson(response,RecyclerViewDatum[].class);
                 recyclerView.setAdapter(new MyAdapterJava(data,getApplicationContext()));
-                Log.d("response : ",response);
             }
         }, new Response.ErrorListener() {
             @Override
