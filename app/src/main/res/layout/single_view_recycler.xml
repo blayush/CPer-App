@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="180dp"
-    android:layout_marginTop="15dp"
-    android:background="#0B719F"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="14dp"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -33,8 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="6dp"
-                android:contentDescription="@string/contest_platform_icon"
-                tools:ignore="ImageContrastCheck" />
+                android:contentDescription="@string/contest_platform_icon" />
 
             <TextView
                 android:id="@+id/contest_status_textView"
@@ -50,7 +49,9 @@
 
     </LinearLayout>
 
-    z<androidx.cardview.widget.CardView
+    z
+
+    <androidx.cardview.widget.CardView
         android:layout_width="320dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
@@ -159,18 +160,18 @@
 
         </LinearLayout>
 
-    <TextView
-        android:id="@+id/days_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_marginRight="7.4dp"
-        android:layout_marginBottom="6dp"
-        android:fontFamily="@font/abhaya_libre"
-        android:text="@string/_2_days_to_go"
-        android:textColor="#B5AFAF"
-        android:textSize="9.3sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/days_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="7.4dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="@string/_2_days_to_go"
+            android:textColor="#B5AFAF"
+            android:textSize="9.3sp"
+            android:textStyle="bold" />
 
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
