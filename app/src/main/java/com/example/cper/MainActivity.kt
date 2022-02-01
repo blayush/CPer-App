@@ -14,7 +14,7 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var recView: RecyclerView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,4 +24,5 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
     }
+
 }

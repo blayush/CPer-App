@@ -8,5 +8,7 @@
 
     <string name="_2_days_to_go">2 days to go</string>
     <string name="running">Running</string>
+    <string name="fill_details">Fill Details</string>
+    <string name="name">Name</string>
 
 </resources>
