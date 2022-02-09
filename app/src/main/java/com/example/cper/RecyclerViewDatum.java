@@ -1,4 +1,3 @@
-
 package com.example.cper;
 
 import com.google.gson.annotations.Expose;
@@ -21,6 +20,9 @@ public class RecyclerViewDatum {
     @SerializedName("duration")
     @Expose
     private String duration;
+    @SerializedName("site")
+    @Expose
+    private String site;
     @SerializedName("in_24_hours")
     @Expose
     private String in24Hours;
@@ -66,6 +68,14 @@ public class RecyclerViewDatum {
 
     public void setDuration(String duration) {
         this.duration = duration;
+    }
+
+    public String getSite() {
+        return site;
+    }
+
+    public void setSite(String site) {
+        this.site = site;
     }
 
     public String getIn24Hours() {

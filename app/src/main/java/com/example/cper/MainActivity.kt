@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
+import android.widget.Toast.LENGTH_SHORT
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -71,7 +73,8 @@ class MainActivity : AppCompatActivity() {
            else {
                cfSelected.alpha = 0.0f
                flag1=false
-                editor.remove("CodeForces").apply()
+                editor.putString("CodeForces","false")
+                editor.apply()
            }
         }
         codeChefBtn.setOnClickListener {
@@ -84,7 +87,7 @@ class MainActivity : AppCompatActivity() {
             else {
                 ccSelected.alpha = 0.0f
                 flag2=false
-                editor.remove("CodeChef").apply()
+                editor.putString("CodeChef","false").apply()
             }
         }
         atCoderBtn.setOnClickListener {
@@ -97,7 +100,7 @@ class MainActivity : AppCompatActivity() {
             else {
                 atSelected.alpha = 0.0f
                 flag3=false
-                editor.remove("AtCoder").apply()
+                editor.putString("AtCoder","false").apply()
             }
         }
         topcoderBtn.setOnClickListener {
@@ -110,7 +113,7 @@ class MainActivity : AppCompatActivity() {
             else {
                 tcSelected.alpha = 0.0f
                 flag4=false
-                editor.remove("TopCoder").apply()
+                editor.putString("TopCoder","false").apply()
             }
         }
         hackerrankBtn.setOnClickListener {
@@ -123,7 +126,7 @@ class MainActivity : AppCompatActivity() {
             else {
                 hRSelected.alpha = 0.0f
                 flag5=false
-                editor.remove("HackerRank").apply()
+                editor.putString("HackerRank","false").apply()
             }
         }
         hackerEarthBtn.setOnClickListener {
@@ -136,14 +139,20 @@ class MainActivity : AppCompatActivity() {
             else {
                 hESelected.alpha = 0.0f
                 flag6=false
-                editor.remove("HackerEarth").apply()
+                editor.putString("HackerEarth","false").apply()
             }
         }
         nextBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity_JAVA::class.java).apply {
-                intent.putExtra("userName",userName.text.toString())
+            if(userName.text.toString() == ""){
+                Toast.makeText(applicationContext,"Please Enter your Name!",LENGTH_SHORT).show()
             }
-            startActivity(intent)
+            else {
+                val intent = Intent(this, MainActivity_JAVA::class.java).apply {
+                    intent.putExtra("userName", userName.text.toString())
+                }
+
+                startActivity(intent)
+            }
         }
 
     }

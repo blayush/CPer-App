@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,16 +14,11 @@ import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-
-import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.ZoneId;
-import java.util.Date;
-import java.util.Locale;
 
 public class MyAdapterJava extends RecyclerView.Adapter<MyAdapterJava.myViewHolder>{
 
@@ -49,12 +43,12 @@ public class MyAdapterJava extends RecyclerView.Adapter<MyAdapterJava.myViewHold
     public void onBindViewHolder(@NonNull myViewHolder holder, int position) {
         RecyclerViewDatum recyclerViewDatum=data[position];
 
-
         // Set Contest Name
         holder.contest_name.setText(recyclerViewDatum.getName());
 
        // Set StartTime and EndTime
         String startTime=recyclerViewDatum.getStartTime(),endTime=recyclerViewDatum.getEndTime();
+        Log.d("StartTime , EndTime : ",startTime+" , "+endTime);
         Instant s = Instant.parse(startTime);
         ZoneId.of("Asia/Kolkata");
         LocalDateTime l = LocalDateTime.ofInstant(s, ZoneId.of("Asia/Kolkata"));
@@ -69,9 +63,9 @@ public class MyAdapterJava extends RecyclerView.Adapter<MyAdapterJava.myViewHold
         holder.end_time.setText(finalEndTime);
 
         // Set Duration
-        int dur=Integer.parseInt(recyclerViewDatum.getDuration());
-        int min=dur/60;
-        int hr=min/60;
+        long dur=Long.parseLong(recyclerViewDatum.getDuration());
+        long min=dur/60;
+        long hr=min/60;
         min=min%60;
         String mins="";
         if(min>0)mins= min +" minutes";
@@ -99,7 +93,7 @@ public class MyAdapterJava extends RecyclerView.Adapter<MyAdapterJava.myViewHold
         return data.length;
     }
 
-    public class myViewHolder extends RecyclerView.ViewHolder{
+    public static class myViewHolder extends RecyclerView.ViewHolder{
         TextView contest_name,start_time,end_time,duration,contest_status,daysLeft;
         ImageView contest_icon;
         CardView contest_icon_cardView;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/contests"
+        android:title="@string/contests"
+        android:icon="@drawable/ic_calendar"/>
+    <item
+        android:id="@+id/blog"
+        android:title="@string/blog"
+        android:icon="@drawable/ic_blog"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_account"
+        android:title="@string/profile" />
+</menu>
