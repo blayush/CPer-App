@@ -1,5 +1,5 @@
 
-# CPer App :white_check_mark:
+# CPer App:zap:
 ![](https://img.shields.io/badge/status-active-brightgreen)
 <!-- 
 [![](https://img.shields.io/badge/Kotlin-32-blueviolet)](https://img.shields.io/badge/Kotlin-32-blueviolet) 
