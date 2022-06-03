@@ -37,7 +37,10 @@ An App for Competitive Programmers made in Java and Kotlin using FireBase as bac
 ## Demo
 
 Wonderful UI made with new material widgets! :heart_eyes: </br> </br>
-![Splash](https://github.com/blayush/CPer-App/blob/master/readme%20rescs/splash_optimized.gif)    <img src="https://github.com/blayush/CPer-App/blob/master/readme%20rescs/2nd.gif" width="330" height="716" />
+![Splash](https://github.com/blayush/CPer-App/blob/master/readme%20rescs/splash_optimized.gif)    <img src="https://github.com/blayush/CPer-App/blob/master/readme%20rescs/2nd.gif" width="330" height="716" /> </br> </br>
+<img src="https://github.com/blayush/CPer-App/blob/4729d296c258d4aba4d3c3638d6d566021d157ed/readme%20rescs/Screenshot_2022-06-04-00-56-50-96_a47ea33a13f6f435d3a5926a6a28d09a.jpg" width="320" height="716" />  <img src="https://github.com/blayush/CPer-App/blob/6ac351a23d1b3840df70e59595ec095466f03463/readme%20rescs/Screenshot_2022-06-03-23-41-57-62_a47ea33a13f6f435d3a5926a6a28d09a.jpg" width="330" height="716" />
+</br> </br>
 
+For any suggestions, Contact me [here!](mailto:ayushmishra42@gmail.com) :mailbox:
 <!-- ![UserDetail]() -->
 
