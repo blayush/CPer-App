@@ -1,10 +1,10 @@
 
 # CPer App :white_check_mark:
-[![](https://img.shields.io/badge/Java-68-red)](https://img.shields.io/badge/Java-68-red) 
-
+![](https://img.shields.io/badge/status-active-brightgreen)
+<!-- 
 [![](https://img.shields.io/badge/Kotlin-32-blueviolet)](https://img.shields.io/badge/Kotlin-32-blueviolet) 
 
-[![](https://img.shields.io/badge/Firebase-Backend-yellow)](https://img.shields.io/badge/Firebase-Backend-yellow)
+[![](https://img.shields.io/badge/Firebase-Backend-yellow)](https://img.shields.io/badge/Firebase-Backend-yellow) -->
 
 
 An App for Competitive Programmers made in Java and Kotlin using FireBase as backend. The app shows information regarding upcoming contests on various online platforms like Codechef, Codeforces, TopCoder, HackerEarth, HackerRank etc. and helps in setting an alarm to get notified, see blogs posted by users and several other features.
